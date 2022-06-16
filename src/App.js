@@ -7,24 +7,13 @@ import {
 } from "react-router-dom";
 
 import Home from "./components/Home";
+import Header from "./components/Header";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-         
-            </li>
-            <li>
-              
-            </li>
-          </ul>
-        </nav>
+        <Header />
         <Routes>
           <Route path="/" element={<Home/>} />
         </Routes>
