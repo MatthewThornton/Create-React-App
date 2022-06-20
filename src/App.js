@@ -8,6 +8,7 @@ import {
 
 import Home from "./components/Home";
 import Header from "./components/Header";
+import TicTacToe from './components/TicTacToe';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="tick-tac-toe" element={<TicTacToe/>} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -7,19 +7,19 @@ import Profile from "./Profile";
 
 const Header = () => {
   return (
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-        
-          </li>
-          <li>
-            <Profile />
-          </li>
-        </ul>
-      </nav>
+    <div class="nav">
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="tick-tac-toe">
+            Tic Tack Toe
+          </Link>
+        </li>
+          <Profile />
+      </ul>
+    </div>
   )
 }
 export default Header;

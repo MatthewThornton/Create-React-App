@@ -22,12 +22,20 @@ const Profile = () => {
 
     } else {
         console.log("user: ", user);
-        return (
-            <span>
-                <img src={user.avatar_url} width="200px" /> <br />
-                <span data-testid='USER-NAME'>{user.name}</span>
-            </span>
-        );
+        return (<>
+            <li>
+                <img src={user.avatar_url} width="45px"
+                    alt={user.name}
+                />
+            </li>
+            <li className="user-name" data-testid='USER-NAME'>
+                <a
+                    href={user.html_url}
+                >
+                    {user.name}
+                </a>
+            </li>
+        </>);
     }
 }
 export default Profile;
