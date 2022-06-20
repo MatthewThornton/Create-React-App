@@ -39,7 +39,7 @@ export function calculateWinner(squares) {
   ];
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
-    if (squares[a] && squares[a].value === squares[b].value && squares[a].value === squares[c].value ) {
+    if (squares[a].value && squares[a].value === squares[b].value && squares[a].value === squares[c].value ) {
       return squares[a].value;
     }
   }
@@ -47,7 +47,7 @@ export function calculateWinner(squares) {
 }
 
 export function getStatus(winner, turn) {
-  if (turn > 9) {
+  if (turn > 9 && !winner) {
     return "The game is a tie!";
   } else if (turn === 1) { 
     return  `The first player is ${getPlayer(turn)}.`;
