@@ -16,7 +16,7 @@ function isEven(num) {
 
 export function getPlayer(turn) {
     if (isEven(turn)) {   
-        return "0"
+        return "O"
     }
     return "X";
 }

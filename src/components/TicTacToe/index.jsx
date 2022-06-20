@@ -10,7 +10,7 @@ const TicTacToe = () =>  {
         console.log('index: ' + key);
         console.log('property name: '+ value);
         let newArr = [...boardArr]; // copying the board
-        newArr[key].value = getPlayer(turn); // replace e.target.value with whatever you want to change it to
+        newArr[key].value = getPlayer(turn); // replace value with whatever you want to change it to
         setBoardArr(newArr);
         // Check for end game.
         setTurn(turn + 1);
@@ -36,7 +36,7 @@ const TicTacToe = () =>  {
         <div className="game-info">
             <div className="status">{status}</div>
             <br />
-            {((winner !== null ||turn > 9 ) && <div>
+            {((winner !== null || turn > 9 ) && <div>
                 <a
                     className="pointer button"
                     onClick={() => resetGame()}

@@ -5,10 +5,11 @@ const Square = ({
     winner,
     handleClick
 }) => {
-    console.log("Square keyValue: ", keyValue)
     if (!keyValue.value && !winner) {
         return (
-        <button className="square"
+        <button 
+            className="square"
+            data-testid={`BLANK-SQUARE-${keyValue.key}`}
             onClick={
                 () => handleClick(keyValue)
             }
@@ -18,7 +19,9 @@ const Square = ({
     }
     // The value cannot be changed once selected. 
     return (
-      <button className="square"
+      <button 
+        className="square"
+        data-testid={`FILLED-SQUARE-${keyValue.key}`}
       >
        {keyValue.value !== null ? keyValue.value : ""}
       </button>

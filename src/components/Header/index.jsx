@@ -7,7 +7,7 @@ import Profile from "./Profile";
 
 const Header = () => {
   return (
-    <div class="nav">
+    <div className="nav">
       <ul>
         <li>
           <Link to="/">Home</Link>
