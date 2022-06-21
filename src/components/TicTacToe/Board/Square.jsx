@@ -7,24 +7,24 @@ const Square = ({
 }) => {
     if (!keyValue.value && !winner) {
         return (
-        <button 
-            className="square"
-            data-testid={`BLANK-SQUARE-${keyValue.key}`}
-            onClick={
-                () => handleClick(keyValue)
-            }
-        >
-        </button>
+            <button 
+                className="square"
+                data-testid={`BLANK-SQUARE-${keyValue.key}`}
+                onClick={
+                    () => handleClick(keyValue)
+                }
+            >
+            </button>
         );
     }
     // The value cannot be changed once selected. 
     return (
-      <button 
+        <button 
         className="square"
         data-testid={`FILLED-SQUARE-${keyValue.key}`}
-      >
-       {keyValue.value !== null ? keyValue.value : ""}
-      </button>
+        >
+        {keyValue.value !== null ? keyValue.value : ""}
+        </button>
     );
 }
 export default Square;

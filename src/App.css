@@ -14,14 +14,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(6px + 2vmin);
 }
 
 .App-link {
@@ -35,6 +32,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.home-text {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.home-text p {
+  font-size: 1em;
+  text-align: left;
 }
 
 <!-- Tic Tack Toe Styles ---->
