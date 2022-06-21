@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://matthewthornton.github.io/me",
+  "homepage": "https://matthewthornton.github.io/my-projects",
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
